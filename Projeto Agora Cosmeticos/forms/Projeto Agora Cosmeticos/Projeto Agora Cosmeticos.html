@@ -11,6 +11,8 @@
 <body>
 	<div class="fluig-style-guide">
 		<form name="form" role="form">
+
+			<!--Painel Solicitante -->
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title"><i class="flaticon flaticon-person icon-md" aria-hidden="true"></i>
@@ -46,6 +48,8 @@
 					</div>
 				</div>
 			</div>
+
+			<!--Painel Ponto Comercial -->
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title"><i class="fluigicon fluigicon-home icon-md" aria-hidden="true"></i> Ponto
@@ -53,6 +57,11 @@
 				</div>
 				<div class="panel-body">
 					<div class="row">
+
+						<div class="form-group col-md-6">
+							<label for="user">Resposanvel</label>
+							
+						</div>
 						<div class="form-group col-md-2">
 							<label for="tipoPonto">Tipo do ponto:</label>
 							<div class="radio">
@@ -109,6 +118,41 @@
 					</div>
 				</div>
 			</div>
+
+			<!--Painel Responsaveis -->
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="fluigicon fluigicon-users icon-lg" aria-hidden="true"></i> Responsaveis</h3>
+				</div>
+				<div class="panel-body">
+					<table tablename="responsaveisTabela" class="table table-hover" addbuttonlabel="Adicionar Responsavel" addbuttonclass="btn btn-info">
+						<thead>
+							<tr>
+								<td>Responsaveis</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="zoom" class="form-control" id="responsavel" name="responsavel" data-zoom="
+     	  						 {
+           							'displayKey':'colleagueName',
+            						'placeholder': 'Selecione o usuário do Fluig',
+            						'datasetId':'colleague',
+            						'fields':[
+									{
+                						'field':'colleagueName',
+                						'label':'colleagueName',
+                						'standard':true
+            						}]
+									}">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--Painel Financeiro -->
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title"><i class="fluigicon fluigicon-money-circle icon-lg" aria-hidden="true"></i>
