@@ -26,10 +26,11 @@ function validateForm(form){
       }
 
     //VALIDAÇÃO CAMPOS PAINEL PONTO COMERCIAL
-    if(form.getValue("segunda") != "on" &&  form.getValue("terca") != "on" && form.getValue("quarta") != "on" &&  form.getValue("quinta") != "on" &&  form.getValue("sexta") != "on" && form.getValue("sabado") != "on" &&  form.getValue("domingo") != "on" );
-
     if(form.getValue("tipoPonto") == ""){
         msg += "Selecione o tipo de ponto!";
+    }
+    if(form.getValue("segunda") != "on" &&  form.getValue("terca") != "on" && form.getValue("quarta") != "on" &&  form.getValue("quinta") != "on" &&  form.getValue("sexta") != "on" && form.getValue("sabado") != "on" &&  form.getValue("domingo") != "on"){
+        msg += "Nenhum dia de funcionamento selecionado";
     }
     if(form.getValue("cep") == ""){
         msg += "Campo cep não preenchido!";
