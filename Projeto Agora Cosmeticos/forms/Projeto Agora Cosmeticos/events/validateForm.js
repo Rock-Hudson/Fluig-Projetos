@@ -2,6 +2,7 @@ function validateForm(form){
 	
 	var msg = "";
 	
+    //VALIDAÇÃO CAMPOS PAINEL SOLICITANTE
     if(form.getValue("nome") == ""){
         msg += "Campo nome não preenchido!";
     }
@@ -10,6 +11,25 @@ function validateForm(form){
     }
     if(form.getValue("telefone") == ""){
         msg += "Campo telefone não preenchido!";
+    }
+    if(form.getValue("Identidade") == ""){
+        msg += "Campo Identidade não preenchido!";
+    }
+    if(form.getValue("dataNascimento") == ""){
+        msg += "Campo Data de nascimento não preenchido!";
+    }
+
+      //VALIDAÇÃO PAINEL REPONSAVEIS
+      var responsaveis = form.getChildrenIndexes(responsaveisTabela);
+      if (responsaveis.length == 0) {
+          msg += "Nenhum responsável atribuido"
+      }
+
+    //VALIDAÇÃO CAMPOS PAINEL PONTO COMERCIAL
+    if(form.getValue("segunda") != "on" &&  form.getValue("terca") != "on" && form.getValue("quarta") != "on" &&  form.getValue("quinta") != "on" &&  form.getValue("sexta") != "on" && form.getValue("sabado") != "on" &&  form.getValue("domingo") != "on" );
+    
+    if(form.getValue("tipoPonto") == ""){
+        msg += "Selecione o tipo de ponto!";
     }
     if(form.getValue("cep") == ""){
         msg += "Campo cep não preenchido!";
@@ -27,6 +47,11 @@ function validateForm(form){
         msg += "Campo estado não preenchido!";
     }
 
+  
+
+
+
+    // VALIDAÇÃO PAINEL FINANCEIRO
 
     if (msg != "") {
         throw msg;
