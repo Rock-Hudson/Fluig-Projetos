@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Projeto Agora Cosmeticos/datasets/dsMoedas.js&apos; to &apos;dsMoedasRock.js&apos;" description="Rename resource &apos;dsMoedas.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="datasets/dsMoedas.js" name="dsMoedasRock.js" stamp="1738875865761" updateReferences="true"/>
+</session>
